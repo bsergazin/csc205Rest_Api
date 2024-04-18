@@ -5,17 +5,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("restaurants")
 public class Restaurant {
-    String Borough;
-    String Cuisine;
-    String Name;
+    String borough;
+    String cuisine;
+    String name;
     @Id
-    String Id;
+    String restaurant_id;
 
     public Restaurant(String borough, 
             String cuisine, String name, String restaurant_id) {
-        Borough = borough;
-        Cuisine = cuisine;
-        Name = name;
-        Id = restaurant_id;
+        borough = borough;
+        cuisine = cuisine;
+        name = name;
+        restaurant_id = restaurant_id;
     }
 }
